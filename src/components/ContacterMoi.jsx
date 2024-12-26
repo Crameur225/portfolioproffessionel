@@ -51,9 +51,9 @@ const ContacterMoi = () => {
                 <div>
                 <h3 className='text-xl uppercase font-bold'>Trouvez moi sur </h3>
                 <div className='grid grid-cols-3 pt-4 gap-2'>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='text-2xl'><FaFacebook/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='#' target='_blank' className='text-2xl'><FaInstagram/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='text-2xl'><FaLinkedin/></a></button>
+                    <a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaFacebook/></a>
+                    <a href='#' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaInstagram/></a>
+                    <a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaLinkedin/></a>
                 </div>
             </div>
               </div>
