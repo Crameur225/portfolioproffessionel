@@ -15,7 +15,7 @@ const Header = () => {
             <h2 className='text-white font-bold text-5xl py-5 leading-[1.25em]'>
                 Salut, je m'appele 
                 <span className='text-red-600'> Yavo Gael Borromée Agbe </span>
-                Developpeur full-Stack junior.
+                Developpeur fullstack Débutant.
             </h2>
             <p className='text-colorCustoms tracking-widest py-5 w-full'>
             <strong>Passionné par le développement Full Stack</strong>, titulaire d’un Brevet de Technicien 
@@ -47,8 +47,14 @@ const Header = () => {
             </div>
         </div>
      </div>
-     <div className='pl-10'>
-        <img src={photo} alt="photo de profile" className='w-full h-4/5 shadow-4xl rounded-xl border-[1em] border-black/80' />
+     <div className='p-4 border-0 border-slate-900/30 shadow-2xl shadow-slate-800 text-5xl'>
+        <div className=' flex gap-2 items-center w-full'>
+            <div className='bg-gray-800 boder-2 border-slate-900 w-20 h-16 rounded-full'></div>
+            <div className='bg-gray-800 boder-2 border-slate-900 w-96 h-16 rounded'></div>
+            <div className='bg-gray-800 boder-2 border-slate-900 w-20 h-16 rounded-full'></div>
+        </div>
+        <div className='bg-gray-800 boder-2 w-full h-96 my-4'></div>
+        <div className='bg-gray-800 boder-2 w-full h-20 my-4'></div>
      </div>
     </div>
    </div>
