@@ -20,7 +20,7 @@ const SkillBar = ({ name, level }) => {
 
 const Skills = () => {
   return (
-    <div className="w-[85%] mx-auto p-4">
+    <div className="w-2/4 mx-auto p-4">
         <div className="py-10">
             <h2 className="text-5xl text-white text-center">SKILLS</h2>
         </div>

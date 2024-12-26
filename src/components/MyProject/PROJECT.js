@@ -8,7 +8,7 @@ import img7 from '../../assets/projet-react-page-contact.png'
 
  const PROJECTS = [
     {
-    id: 11,
+    id: 7,
     image: img7,
     title:"Projet Page de Contact",
     description: `Ce projet consiste en une page de contact interactive développée avec ReactJS, intégrant Web3Forms pour la gestion des soumissions de formulaire et SweetAlert2 pour afficher des notifications élégantes et dynamiques.
@@ -24,7 +24,7 @@ Grâce à ce projet, j’ai appris à configurer une solution de formulaire séc
 Il s’agit d’une application web permettant d’effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur des données simulées.\n
 L'application utilise ReactJS pour le front-end et JSON-Server pour simuler une API REST. \n Elle inclut la gestion de l’état avec useState et useEffect, ainsi que des requêtes API via axios.\n
 Ce projet m’a permis de maîtriser les bases du développement d’applications dynamiques avec une architecture orientée API.`,
-     link: "https://projet-crud-react-001-fponuflis-crameurs-projects.vercel.app/"
+     link: "https://projet-crud-react-001.vercel.app//"
     },
     {
         id: 2,
@@ -55,7 +55,7 @@ Ce projet m’a permis de concevoir une interface utilisateur fluide et réactiv
 J’ai également travaillé sur l’optimisation de l’expérience utilisateur grâce à une navigation claire et ergonomique.
       
         `,
-        link: "https://projet-react-004-ofcx4799i-crameurs-projects.vercel.app/"
+        link: "https://projet-react-004.vercel.app/"
     },
     {
         id: 5,
@@ -65,7 +65,7 @@ J’ai également travaillé sur l’optimisation de l’expérience utilisateur
 Ce projet a été développé en utilisant Vite comme environnement de développement.\n
 Grâce à ce projet, j’ai appris à configurer et exploiter Vite pour bénéficier d’un temps de compilation rapide et d’un rechargement en direct optimisé.\n Cela m’a permis d’améliorer ma productivité et de mieux comprendre les avantages d’un environnement moderne pour les projets React.
         `,
-        link: "https://site-vitrine-001-r53wsomuh-crameurs-projects.vercel.app/"
+        link: "https://site-vitrine-001.vercel.app/"
     },
     {
         id: 6,
@@ -74,7 +74,7 @@ Grâce à ce projet, j’ai appris à configurer et exploiter Vite pour bénéfi
         description: `Ce projet marque mes débuts avec ReactJS, où j’ai appris à créer des composants, gérer l’état avec useState, et organiser une structure de projet.\n
 Il m’a permis de comprendre les bases de React, notamment la création d’une interface dynamique et la gestion des interactions utilisateur, tout en renforçant mes compétences en développement front-end.
         `,
-        link: "https://site-vitrine-001-r53wsomuh-crameurs-projects.vercel.app/"
+        link: "https://site-vitrine-omega.vercel.app/"
     },
     
 ]

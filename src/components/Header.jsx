@@ -13,7 +13,7 @@ const Header = () => {
      <div className='gap-y-10 tracking-wider'>
         <div className=''>
             <h2 className='text-white font-bold text-5xl py-5 leading-[1.25em]'>
-                Salut, je m'appele 
+                Salut, je me nomme 
                 <span className='text-red-600'> Yavo Gael Borromée Agbe </span>
                 Developpeur fullstack Débutant.
             </h2>
@@ -29,17 +29,17 @@ const Header = () => {
             <div>
                 <h3 className='text-xl uppercase font-bold'>Trouvez moi sur </h3>
                 <div className='grid grid-cols-3 py-4 gap-2'>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='text-2xl'><FaFacebook/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='#' target='_blank' className='text-2xl'><FaInstagram/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='text-2xl'><FaLinkedin/></a></button>
+                    <a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaFacebook/></a>
+                    <a href='#' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaInstagram/></a>
+                    <a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaLinkedin/></a>
                 </div>
             </div>
             <div>
                 <h3 className='text-xl uppercase font-bold'>Ce que j'utilise</h3>
                 <div className='grid grid-cols-3 py-4 gap-2'>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><a href='https://react.dev/' target='_blank' className='text-2xl hover:text-red-600'><FaReact/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><a href='https://nodejs.org/en' target='_blank' className='text-2xl hover:text-red-600'><FaNodeJs/></a></button>
-                    <button className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><a href='https://www.mongodb.com/products/platform/atlas-database' target='_blank' className='text-2xl hover:text-red-600'><SiMongodb/></a></button>
+                    <a href='https://react.dev/' target='_blank' className='text-2xl hover:text-red-600 py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><FaReact/></a>
+                    <a href='https://nodejs.org/en' target='_blank' className='text-2xl hover:text-red-600 py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><FaNodeJs/></a>
+                <a href='https://www.mongodb.com/products/platform/atlas-database' target='_blank' className='text-2xl hover:text-red-600 py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl shadow-slate-400/20 hover:bg-gray-800'><SiMongodb/></a>
                 </div>
             </div>
             <div>
