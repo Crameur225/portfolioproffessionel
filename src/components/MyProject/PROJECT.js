@@ -28,7 +28,7 @@ Ce projet m’a permis de maîtriser les bases du développement d’application
     },
     {
         id: 2,
-        image: img5,
+        image: img4,
         title: 'Projet de site e-commerce',
         description: `
         Ce projet est un site e-commerce développé avec ReactJS, mettant l'accent sur un système de panier interactif.\n
@@ -38,7 +38,7 @@ Ce projet m’a permis de maîtriser les bases du développement d’application
     },
     {
         id: 3,
-        image: img4,
+        image: img5,
         title:"Projet TvShow",
         description: `Ce projet consiste en une application développée avec ReactJS permettant de rechercher et d’afficher des informations sur des séries télévisées en utilisant une API externe.\nGrâce à ce projet, j’ai appris à intégrer des API dans une application React, à manipuler les données reçues et à gérer les états pour afficher dynamiquement les résultats. \n
 Ce projet m’a également permis d’approfondir l’utilisation d’outils comme axios pour effectuer des requêtes HTTP et de concevoir une interface réactive et intuitive. 
