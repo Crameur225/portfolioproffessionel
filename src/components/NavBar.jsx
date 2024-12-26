@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import photo from '../assets/photo.jpg';
+import cv from '../assets/CV-AGBE-YAVO-GAEL-BORROMEE.pdf'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [fixed, setFixed]= useState(false);
@@ -45,7 +46,7 @@ useEffect(()=>{
           <li><a href="#contact" className="hover:text-white uppercase text-sm  hover:transition-all ease-out hover:duration-500">Contact</a></li>
           <li>
             <a
-              href="/path/to/cv.pdf" // Remplacez par le chemin de votre CV
+              href={cv} // Remplacez par le chemin de votre CV
               download
               className="bg-black/60 border px-4 py-2 text-white rounded hover:bg-red-600"
             >
@@ -96,7 +97,7 @@ useEffect(()=>{
           <li><a href="#contact" className="block hover:text-gray-400 uppercase">Contact</a></li>
           <li>
             <a
-              href="/path/to/cv.pdf"
+              href={cv}
               download
               className="block bg-black/90 px-4 py-2 text-center rounded hover:bg-red-600"
             >
