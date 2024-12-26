@@ -93,7 +93,6 @@ useEffect(()=>{
           <li><a href="#about" className="block hover:text-gray-400 uppercase">Ce que je fais</a></li>
           <li><a href="#projects" className="block hover:text-gray-400 uppercase">Mes Projets</a></li>
           <li><a href="#about-me" className="block hover:text-gray-400 uppercase">Moi</a></li>
-          <li><a href="#testimonials" className="block hover:text-gray-400 uppercase">Témoignages</a></li>
           <li><a href="#contact" className="block hover:text-gray-400 uppercase">Contact</a></li>
           <li>
             <a
