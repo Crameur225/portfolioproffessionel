@@ -15,7 +15,7 @@ const Header = () => {
             <h2 className='text-white font-bold text-5xl py-5 leading-[1.25em]'>
                 Salut, je me nomme 
                 <span className='text-red-600'> Yavo Gael Borromée Agbe </span>
-                Developpeur fullstack Débutant.
+                Développeur fullstack Débutant.
             </h2>
             <p className='text-colorCustoms tracking-widest py-5 w-full'>
             <strong>Passionné par le développement Full Stack</strong>, titulaire d’un Brevet de Technicien 
