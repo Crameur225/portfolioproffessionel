@@ -3,6 +3,7 @@ import photo from '../assets/photo.jpg'
 import { FaFacebook, FaInstagram, FaNodeJs, FaReact } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { SiMongodb } from 'react-icons/si'
+import cv from '../assets/CV-AGBE-YAVO-GAEL-BORROMEE.pdf'
 const Header = () => {
   return (
    <div className='mt-20 border-b-0  border-white' id='home'>
@@ -32,6 +33,13 @@ const Header = () => {
                     <a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaFacebook/></a>
                     <a href='#' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaInstagram/></a>
                     <a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800 text-2xl'><FaLinkedin/></a>
+            <a href={cv} // Remplacez par le chemin de votre CV
+             download
+              className="bg-black/60 border w-40 px-4 py-2 text-white rounded hover:bg-red-600"
+            >
+              Télécharger CV
+            </a>
+          
                 </div>
             </div>
             <div>
@@ -48,13 +56,7 @@ const Header = () => {
         </div>
      </div>
      <div className='p-4 border-0 border-slate-900/30 shadow-2xl shadow-slate-800 text-5xl'>
-        <div className=' flex gap-2 items-center w-full'>
-            <div className='bg-gray-800 boder-2 border-slate-900 w-20 h-16 rounded-full'></div>
-            <div className='bg-gray-800 boder-2 border-slate-900 w-96 h-16 rounded'></div>
-            <div className='bg-gray-800 boder-2 border-slate-900 w-20 h-16 rounded-full'></div>
-        </div>
-        <div className='bg-gray-800 boder-2 w-full h-96 my-4'></div>
-        <div className='bg-gray-800 boder-2 w-full h-20 my-4'></div>
+        <img src={photo} alt="" className='rounded-xl' />
      </div>
     </div>
    </div>
