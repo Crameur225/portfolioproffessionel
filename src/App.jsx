@@ -11,7 +11,7 @@ import BackToTop from './components/BackToTop'
 
 const App = () => {
   return (
-    <div className='min-w-full min-h-min bg-bakgroundCustoms'>
+    <div className='min-w-full min-h-min bg-bakgroundCustoms overflow-y-hidden'>
       <Navbar/>
       <BackToTop/>
        <div className='w-[90%] h-full m-auto'>
