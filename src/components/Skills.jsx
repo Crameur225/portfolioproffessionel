@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <div className="w-2/4 mx-auto py-4">
         <div className="py-10">
-            <h2 className="text-5xl text-white text-center">SKILLS</h2>
+            <h2 className="text-3xl text-white text-center">SKILLS</h2>
         </div>
       <h2 className="text-lg font-bold mb-4 text-white uppercase">Compétences</h2>
       {skills.map((skill) => (
