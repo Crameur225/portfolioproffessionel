@@ -33,18 +33,26 @@ export const FORMATIONS = [
 ]
 
 export const EXPERINCES = [
-    {
+  {
         id: 1,
-        title: 'Téléconseiller',
-        name: 'GOTRAYS',
+        title: 'Stage en Intélligence Artificielle',
+        name: 'OSIS GROUP',
+        date:"Février  2025 - Août 2025 ",
+        description: ""
+  },
+    {
+        id: 2,
+        title: 'Responsable Téléconseiller',
+        name: 'IST JOB',
         date:"Septembre 2023- Avril 2024",
         description: "Gestion des relations clients"
     },
     {
-        id: 2,
+        id: 3,
         title: 'Stage en Développement Web',
         name: 'EXPERTISE PDCP',
         date:"Avril 2023 - Septembre 2023",
         description: "Projet réaliser site e-learning avec le framework wordPress."
-    }
+    },
+    
 ]

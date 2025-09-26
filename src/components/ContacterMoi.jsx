@@ -1,104 +1,139 @@
-import React from 'react'
-import profile from '../assets/photo1.jpg';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa6';
-import Swal from 'sweetalert2';
-const ContacterMoi = () => {
+import React from "react";
+import profile from "../assets/photo1.jpg";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import Swal from "sweetalert2";
 
+const ContacterMoi = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-
     formData.append("access_key", "11b79496-234d-4c48-aebf-7ce3c0f76611");
-
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: json,
     }).then((res) => res.json());
 
     if (res.success) {
       Swal.fire({
         title: "Success",
-        text: "Votre message à été Envoyer",
-        icon: "success"
+        text: "Votre message a été envoyé",
+        icon: "success",
       });
     }
   };
 
   return (
-    <div className='py-20 text-colorCustoms' id='contact'>
-      <p className='text-center text-red-600 text-xl uppercase'>CONTACT</p>
-      <h2 className='text-center text-5xl font-bold tracking-wider'>CONTACTEZ MOI</h2>
-      <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-10'>
-          <div className='shadow-2xl border-slate-900/30 border-0 lg:w-4/5 sm:w-full my-4'>
-            <img src={profile} alt="" className='border-0 border-slate-900/30 p-4 shadow-2xl  rounded-3xl lg:w-80 sm:w-full lg:h-64 sm:h-auto mx-auto my-10'/>
-            <h2 className='text-3xl px-4 py-2'>Developpeur Web Fullstack</h2>
-            <div className='px-4 pb-10'>
-            <p className=''>
-            Passionné par le code, je suis aujourd'hui développeur fullstack, avec une maîtrise aussi bien du frontend que du backend. Je suis disponible pour rejoindre votre entreprise ou tout projet lié au développement web.
-              </p>
-              <p >Je suis disponible au:</p>
-              <p className='text-xl font-bold py-4'>Tel: <a href="tel:+2250700029598" className='text-green-600'>+225 0700029598</a> / <a className='text-green-600' href="tel:+2250585296048">+225 0585296048</a></p>
-              <p className='font-bold text-xl'>Email: <a href="mailto:gaelagbe@gmail.com" className='text-green-600'>gaelagbe@gmail.com</a></p>
-              <div>
-                <div>
-                <h3 className='text-xl uppercase font-bold'>Trouvez moi sur </h3>
-                <div className='grid grid-cols-3 pt-4 gap-2'>
-                    <a href='https://www.facebook.com/profile.php?id=100092984683097' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaFacebook/></a>
-                    <a href='#' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaInstagram/></a>
-                    <a href='www.linkedin.com/in/gael-agbe-29a689270' target='_blank' className='text-2xl py-2 bg-gray-900 rounded flex justify-center items-center shadow-xl  shadow-slate-400/20 hover:bg-gray-800'><FaLinkedin/></a>
-                </div>
-            </div>
-              </div>
+    <div className="py-20 bg-gray-900 text-colorCustoms" id="contact">
+      <p className="text-center text-red-500 text-lg uppercase font-semibold tracking-widest">
+        CONTACT
+      </p>
+      <h2 className="text-center text-5xl font-extrabold tracking-wider text-white pb-12">
+        CONTACTEZ MOI
+      </h2>
+
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-12 w-11/12 mx-auto">
+        {/* Profil */}
+        <div className="bg-black/50 backdrop-blur-md shadow-2xl rounded-3xl p-6 flex flex-col items-center transition-all duration-500 hover:shadow-3xl">
+          <img
+            src={profile}
+            alt="Profile"
+            className="rounded-3xl shadow-lg w-72 h-72 object-cover mb-6"
+          />
+          <h2 className="text-3xl text-white font-bold mb-4">Développeur Web Fullstack</h2>
+          <p className="text-gray-300 text-center mb-4">
+            Passionné par le code, je suis développeur fullstack avec maîtrise du frontend et backend. 
+            Je suis disponible pour rejoindre votre entreprise ou tout projet lié au développement web.
+          </p>
+          <p className="text-gray-300 mb-2">Je suis disponible au:</p>
+          <p className="text-green-500 font-bold mb-2">
+            Tel: <a href="tel:+2250700029598">+225 0700029598</a> / <a href="tel:+2250585296048">+225 0585296048</a>
+          </p>
+          <p className="text-green-500 font-bold mb-4">
+            Email: <a href="mailto:gaelagbe@gmail.com">gaelagbe@gmail.com</a>
+          </p>
+          <div className="w-full text-center">
+            <h3 className="text-xl uppercase font-bold mb-3">Trouvez-moi sur</h3>
+            <div className="flex justify-center gap-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100092984683097"
+                target="_blank"
+                className="text-2xl p-3 bg-gray-800 rounded-full shadow-lg hover:bg-red-500 transition duration-300"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                className="text-2xl p-3 bg-gray-800 rounded-full shadow-lg hover:bg-pink-500 transition duration-300"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="www.linkedin.com/in/gael-agbe-29a689270"
+                target="_blank"
+                className="text-2xl p-3 bg-gray-800 rounded-full shadow-lg hover:bg-blue-500 transition duration-300"
+              >
+                <FaLinkedin />
+              </a>
             </div>
           </div>
-          {/* Formulaire de contact */}
-          <form onSubmit={onSubmit} className='shadow-2xl border-slate-900/30 border-0 my-4'>
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 px-4">
-            <div>
-              <label>Votre nom: *</label>
-              <input 
-                type="text" 
-                name="name" 
-                className="w-full outline-none border-2 border-gray-800 hover:outline-red-600 bg-black py-4 rounded-xl" 
-                required 
-              />
-            </div>
-            <div>
-              <label>Votre Numéro: *</label>
-              <input 
-                type="text" 
-                name="tel" 
-                className="w-full outline-none border-2 border-gray-800 hover:outline-red-600 bg-black py-4 rounded-xl" 
-                required 
-              />
-            </div>
+        </div>
+
+        {/* Formulaire */}
+        <form
+          onSubmit={onSubmit}
+          className="bg-black/50 backdrop-blur-md shadow-2xl rounded-3xl p-6 transition-all duration-500 hover:shadow-3xl"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Votre nom *"
+              required
+              className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-red-500 outline-none"
+            />
+            <input
+              type="text"
+              name="tel"
+              placeholder="Votre numéro *"
+              required
+              className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-red-500 outline-none"
+            />
           </div>
-            <div className='py-4 px-2'>
-              <label>Email: *</label>
-              <input type="email" name="email" className='outline-none border-2 border-gray-800 hover:outline-red-600 bg-black py-4 w-full rounded-xl' required/>
-            </div>
-            <div className='py-4 px-2'>
-              <label>Objet</label>
-              <input type="text" name='objet' className='outline-none border-2 border-gray-800 hover:outline-red-600 bg-black py-4 w-full rounded-xl'/>
-            </div>
-            <div className='pt-6 pb-4 px-2'>
-              <label>Votre message: *</label>
-              <textarea name="message" className='outline-none border-2 border-gray-800 hover:outline-red-600 bg-black h-48 w-full resize-none rounded-xl' required></textarea>
-            </div>
-            <button className='w-full hover:bg-red-500 bg-black text-center py-4 rounded-xl font-bold uppercase'>Envoyer message</button>
-            <p className='text-center'>Tout les champs avec un (*) sont réquis</p>
-          </form>
+          <input
+            type="email"
+            name="email"
+            placeholder="Votre email *"
+            required
+            className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-red-500 outline-none mb-4"
+          />
+          <input
+            type="text"
+            name="objet"
+            placeholder="Objet"
+            className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-red-500 outline-none mb-4"
+          />
+          <textarea
+            name="message"
+            placeholder="Votre message *"
+            required
+            className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-red-500 outline-none h-48 resize-none mb-4"
+          />
+          <button className="w-full bg-gradient-to-r from-red-500 to-pink-600 hover:from-pink-600 hover:to-red-500 text-white py-4 rounded-xl font-bold uppercase transition-all duration-300 mb-2">
+            Envoyer message
+          </button>
+          <p className="text-center text-gray-400 text-sm">
+            Tous les champs avec (*) sont requis
+          </p>
+        </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContacterMoi
+export default ContacterMoi;
