@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import photo from "../assets/photo.jpg";
+import photo from "../assets/photo.png";
 import cv from "../assets/CV-AGBE-YAVO-GAEL-BORROMEE.pdf";
 
 const Navbar = () => {

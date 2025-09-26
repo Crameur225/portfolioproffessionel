@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import photo from '../assets/photo.jpg'
+import photo from '../assets/photo.png'
 import { FaFacebook, FaInstagram, FaNodeJs, FaReact } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { SiMongodb } from 'react-icons/si'
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 
 const Header = () => {
   return (
-    <div className="mt-20 border-b border-white/10" id="home">
+    <div className="mt-20 border-b border-white/10 relative overflow-hidden" id="home">
       {/* Texte de bienvenue */}
       <motion.h3
         initial={{ opacity: 0, y: -20 }}
@@ -21,7 +21,7 @@ const Header = () => {
       </motion.h3>
 
       {/* Contenu principal */}
-      <div className="lg:grid lg:grid-cols-2 sm:flex sm:flex-wrap gap-16 mt-12 items-center">
+      <div className="lg:grid lg:grid-cols-2 sm:flex sm:flex-wrap gap-16 mt-12 items-center relative z-10">
         {/* Texte gauche */}
         <div className="gap-y-10 tracking-wider">
           <motion.div
@@ -128,18 +128,18 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Photo droite */}
+        {/* Photo droite design pro */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative flex justify-center"
+          className="relative flex justify-center items-center"
         >
-          <div className="p-2 rounded-full bg-gradient-to-r from-red-600 via-pink-500 to-yellow-500 animate-spin-slow">
+          <div className="relative w-72 h-72 rounded-full p-1 bg-gradient-to-tr from-red-600 via-pink-500 to-purple-600 animate-spin-slow">
             <img
               src={photo}
               alt="profile"
-              className="rounded-2xl w-80 h-96 object-cover border-4 border-gray-900"
+              className="rounded-full w-full h-full object-cover border-4 border-gray-900 shadow-lg"
             />
           </div>
         </motion.div>
